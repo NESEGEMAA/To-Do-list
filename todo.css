@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 1%;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+#noTasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 30vh;
+  padding: 1% 10vh;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#currentTasks {
+  display: none;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  overflow-y: auto;
+  width: 100vh;
+  min-height: 10vh;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 80vh;
+  padding: 1.5vh 1vh;
+  border-radius: 20px;
+}
+#currentTasks .general {
+  margin: 1vh;
+}
+
+.enteredTask {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid black 1px;
+  border-radius: 20px;
+  align-self: center;
+}
+.enteredTask button {
+  background-color: transparent;
+  margin-left: auto;
+  opacity: 100%;
+  background-color: white;
+}
+.enteredTask button:hover {
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+.enteredTask .time {
+  margin-left: auto;
+}
+
+.general {
+  align-self: center;
+  width: 80%;
+  height: 7vh;
+  margin: auto;
+  padding: 1.5vh 1vh;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  opacity: 70%;
+  text-align: left;
+}
+.general input {
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.newTask:hover {
+  opacity: 40%;
+}
+
+#dataEntry {
+  margin-bottom: 2%;
+}/*# sourceMappingURL=todo.css.map */
